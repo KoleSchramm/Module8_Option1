@@ -8,9 +8,32 @@ public class Main {
         queue.printAll();
         System.out.println();
 
-        queue.dequeue();
+        queue.dequeue().printPerson();
+        System.out.println();
 
         queue.printAll();
         System.out.println();
+
+        System.out.println(queue.isEmpty());
+        System.out.println();
+
+        queue.clear();
+        queue.printAll();
+
+        System.out.println("Starting queue: ");
+        queue.enqueue(new Person("Jeff", "Goldbloom", "45"));
+        queue.enqueue(new Person("Rick", "Sanchez", "89"));
+        queue.enqueue(new Person("Phil", "Phillips", "23"));
+        queue.enqueue(new Person("Peter", "Griffin", "45"));
+        queue.enqueue(new Person("John", "Johnson", "4"));
+
+        queue.printAll();
+        System.out.println();
+
+        System.out.println("Sorted by last name:");
+        queue.sortLastName();
+        queue.printAll();
+        System.out.println();
+
     }
 }

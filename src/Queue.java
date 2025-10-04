@@ -1,21 +1,21 @@
 import java.util.LinkedList;
 
 public class Queue {
-    LinkedList<Person> linkedList = new LinkedList<>();
+    private LinkedList<Person> linkedList = new LinkedList<>();
 
     public Queue(){
     }
 
     public void enqueue(Person person){
-        linkedList.addFirst(person);
+        linkedList.addLast(person);
     }
 
     public Person dequeue(){
-        return linkedList.removeLast();
+        return linkedList.removeFirst();
     }
 
     public Person getFront(){
-        return linkedList.getLast();
+        return linkedList.getFirst();
     }
 
     public boolean isEmpty(){
@@ -28,10 +28,11 @@ public class Queue {
 
     public void printAll(){
         for(int i = 0; i<linkedList.size(); i++){
-            System.out.print(linkedList.get(i).getFirstName() + " ");
-            System.out.print(linkedList.get(i).getLastName() + " ");
-            System.out.print(linkedList.get(i).getAge());
-            System.out.println();
+            linkedList.get(i).printPerson();
         }
+    }
+
+    public void sortLastName(){
+
     }
 }

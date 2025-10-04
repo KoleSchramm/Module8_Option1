@@ -1,7 +1,7 @@
 public class Person {
-    String firstName;
-    String lastName;
-    String age;
+    private String firstName;
+    private String lastName;
+    private String age;
 
     public Person(){
         firstName = "";
@@ -37,5 +37,12 @@ public class Person {
 
     public String getAge(){
         return age;
+    }
+
+    public void printPerson(){
+        System.out.print(getFirstName() + " ");
+        System.out.print(getLastName() + " ");
+        System.out.print(getAge());
+        System.out.println();
     }
 }
