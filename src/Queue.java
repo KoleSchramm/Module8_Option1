@@ -2,6 +2,10 @@ import java.util.LinkedList;
 
 public class Queue {
     private LinkedList<Person> linkedList = new LinkedList<>();
+    private final int LAST_NAME = 1;
+    private final int AGE = 2;
+
+    QuickSort quickSort = new QuickSort();
 
     public Queue(){
     }
@@ -33,6 +37,11 @@ public class Queue {
     }
 
     public void sortLastName(){
-
+        quickSort.sort(linkedList, LAST_NAME);
     }
+
+    public void sortAge(){
+        quickSort.sort(linkedList, AGE);
+    }
+
 }
