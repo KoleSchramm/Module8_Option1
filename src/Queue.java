@@ -34,6 +34,7 @@ public class Queue {
         for(int i = 0; i<linkedList.size(); i++){
             linkedList.get(i).printPerson();
         }
+        System.out.println();
     }
 
     public void sortLastName(){
