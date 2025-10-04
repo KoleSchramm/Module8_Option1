@@ -2,8 +2,8 @@ import java.util.LinkedList;
 
 public class Queue {
     private LinkedList<Person> linkedList = new LinkedList<>();
-    private final int LAST_NAME = 1;
-    private final int AGE = 2;
+    private static final int LAST_NAME = 1;
+    private static final int AGE = 2;
 
     QuickSort quickSort = new QuickSort();
 
