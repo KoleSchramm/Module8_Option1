@@ -25,4 +25,13 @@ public class Queue {
     public void clear(){
         linkedList.clear();
     }
+
+    public void printAll(){
+        for(int i = 0; i<linkedList.size(); i++){
+            System.out.print(linkedList.get(i).getFirstName() + " ");
+            System.out.print(linkedList.get(i).getLastName() + " ");
+            System.out.print(linkedList.get(i).getAge());
+            System.out.println();
+        }
+    }
 }
